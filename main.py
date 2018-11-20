@@ -26,8 +26,10 @@ best_result.set_to_worst()
 def create_data_loaders(args):
     # Data loading code
     print("=> creating data loaders ...")
-    traindir = os.path.join('data', args.data, 'train')
-    valdir = os.path.join('data', args.data, 'val')
+    #traindir = os.path.join('data', args.data, 'train')
+    #valdir = os.path.join('data', args.data, 'val')
+    traindir = os.path.join('data', args.data_path, 'train')
+    valdir = os.path.join('data', args.data_path, 'val')
     train_loader = None
     val_loader = None
 
